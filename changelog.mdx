@@ -1,0 +1,129 @@
+---
+title: Changelog
+description: Stay updated with the latest releases and improvements to the Snacko platform.
+---
+
+## Recent Updates
+
+Stay current with Snacko`s evolution. Check these highlights from our most recent releases.
+
+<Update label="2024-10-15" description="v1.5.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added client sharing for dietitians: Share personalized diet plans directly with clients via secure links.
+- Introduced nutrition goal presets: Quick-setup templates for weight loss, muscle gain, and vegan diets.
+- Enhanced mobile app with barcode scanner: Scan packaged foods for instant nutrition logging.
+
+## Improvements
+
+- Optimized dashboard load times by `>40%` for faster access to client tracking.
+- Improved search in diet plan library with fuzzy matching for ingredients.
+
+## Bug Fixes
+
+- Fixed sync issues between web and mobile for daily intake logs.
+- Resolved notification delays for dietitian client updates.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.4.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Dietitian client management dashboard: Bulk import clients from CSV and assign plans in bulk.
+- Personal user mode enhancements: Self-track without a dietitian using AI-suggested adjustments.
+
+## Bug Fixes
+
+- Corrected calorie calculation errors for custom recipes.
+- Fixed login issues on Safari browsers.
+
+## Improvements
+
+- Better integration with wearables: Sync steps and activity data automatically.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.3.0" tags={["breaking", "feature"]}>
+
+## New Features
+
+- Real-time collaboration: Dietitians and clients co-edit plans with live updates.
+- Advanced reporting: Generate PDF exports of progress charts.
+
+## Breaking Changes
+
+- Updated API endpoints: All nutrition tracking now uses `/v2/track` instead of `/track`.
+
+## Bug Fixes
+
+- Patched security vulnerability in shared plan links.
+
+</Update>
+
+## How to Update
+
+Follow these steps to ensure you run the latest version of Snacko.
+
+<Steps>
+  <Step title="Check Current Version" icon="check-circle">
+
+    Visit your [dashboard](https://dashboard.example.com) and navigate to Settings `{>`} About.
+
+  </Step>
+  <Step title="Update Web App" icon="refresh-cw">
+
+````bash
+# Clear browser cache and reload
+# Or force refresh: Ctrl+Shift+R (Windows) / Cmd+Shift+R (Mac)
+````
+
+  </Step>
+  <Step title="Update Mobile App" icon="smartphone">
+
+    <Tabs>
+      <Tab title="iOS" icon="apple">
+
+````bash
+# App Store: Search "Snacko" and update
+# Or use TestFlight for beta versions
+````
+
+      </Tab>
+      <Tab title="Android" icon="android">
+
+````bash
+# Google Play: Search "Snacko" and update
+# Or sideload latest APK from releases
+````
+
+      </Tab>
+    </Tabs>
+
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Enable auto-updates in your app settings to always stay on the latest version. Restart the app after updating for best results.
+</Callout>
+
+## Upcoming Changes
+
+Preview what`s coming next to Snacko.
+
+<Columns cols={3}>
+  <Card title="AI Diet Coach" icon="zap" href="/quickstart">
+    Personalized coaching powered by behavior science.
+  </Card>
+  <Card title="Wearable Integrations" icon="activity" href="/authentication">
+    Deeper sync with Fitbit, Apple Health, and Google Fit.
+  </Card>
+  <Card title="Team Plans" icon="users" href="#">
+    Multi-client management for clinics.
+  </Card>
+</Columns>
+
+<Callout kind="info">
+  For migration help with v1.3.0 breaking changes, see the API docs at `https://api.example.com/docs`.
+</Callout>
